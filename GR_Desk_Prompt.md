@@ -32,10 +32,13 @@ Name, in-game username, ticket_type, ticket_ subject, and ticket_body.
 
 - uuid
 - requestor_name
-- username
+- requestor_username
 - ticket_type
 - ticket_subject
 - ticket_body
-- 
+- escalation_level
+- ticket_worknotes
+- ticket_created_timestamp
+- ticket_
 
 
