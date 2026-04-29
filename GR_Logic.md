@@ -10,3 +10,8 @@ Minecraft Server Hosting
 - Organization Structure
 - SLA and SLE
 - Knowledge Base
+
+### Org Structure
+
+1. Owner
+2. 
