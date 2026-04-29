@@ -4,8 +4,9 @@ GR_Desk is a business logic platform built to support GR Host operations while a
 
 ## Code Quality
 
-Single JavaScript file
-PEP8 compliant Python
+- Single css file
+- Single JavaScript file
+- PEP8 compliant Python
 
 
 ## Core Features
@@ -20,4 +21,20 @@ PEP8 compliant Python
 - Employee Management
 - Discord ChatOps
 - Slack ChatOps
+
+### IT Ticket Service Desk
+
+Name, in-game username, ticket_type, ticket_ subject, and ticket_body.
+
+**Types:** Request - REQ, Chsnge 
+
+**Ticket Key:Values**
+
+- name
+- username
+- ticket_type
+- ticket_subject
+- ticket_body
+- 
+
 
