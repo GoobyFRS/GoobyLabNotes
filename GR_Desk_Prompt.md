@@ -30,7 +30,8 @@ Name, in-game username, ticket_type, ticket_ subject, and ticket_body.
 
 **Ticket Key:Values**
 
-- name
+- uuid
+- requestor_name
 - username
 - ticket_type
 - ticket_subject
