@@ -9,8 +9,9 @@ GR_Desk is a business logic platform built to support GR Host operations while a
 - Single css file with all elements. Reuse as many as possible.
 - Single JavaScript file
 - Strict PEP8 compliant Python
-- configuration via config.yml
+- configuration via configuration.yml
 - custom branding via custom.yml
+- DOTENV for secrets 
 
 
 ## Core Features
@@ -19,9 +20,6 @@ GR_Desk is a business logic platform built to support GR Host operations while a
 - Knowledge Base
 - CRM Platform
 - HR Platform
-- configuration.yml
-- branding.yml
-- DOTENV for secrets
 
 ### Secondary Features
 
