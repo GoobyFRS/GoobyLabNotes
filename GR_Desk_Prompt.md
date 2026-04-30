@@ -79,6 +79,15 @@ Name, in-game username, ticket_type, ticket_ subject, and ticket_body.
 
 ### Service Desk Reporting Module
 
+- Total Open Count
+- Total Closed
+- Current Open Count
+- Open Last 7 Days
+- Closed Last 7 Days
+- Open Last 30 Days
+- Closed Last 30 Days
+- Closed Count per Technician
+
 ### Service Desk Ingest API Endpoint Module
 
 - uptime-kuma
