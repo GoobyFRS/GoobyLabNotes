@@ -9,6 +9,8 @@ GR_Desk is a business logic platform built to support GR Host operations while a
 - Single css file with all elements. Reuse as many as possible.
 - Single JavaScript file
 - Strict PEP8 compliant Python
+- configuration via config.yml
+- custom branding via custom.yml
 
 
 ## Core Features
