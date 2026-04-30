@@ -4,9 +4,11 @@ GR_Desk is a business logic platform built to support GR Host operations while a
 
 ## Code Quality
 
-- Single css file
+- Use Jinja for HTML templates.
+- Follow HTML5 W3 best practices for modern web.
+- Single css file with all elements. Reuse as many as possible.
 - Single JavaScript file
-- PEP8 compliant Python
+- Strict PEP8 compliant Python
 
 
 ## Core Features
@@ -33,7 +35,7 @@ Use json key-value pairs to store and sort this data.
 
 Name, in-game username, ticket_type, ticket_ subject, and ticket_body.
 
-**Types:** Request-REQ, Change-CHG, Incident-INC,
+**Types:** Request-REQ, Change-CHG, Incident-INC, Billing-TKT
 
 **Ticket Key:Values**
 
@@ -79,7 +81,14 @@ Name, in-game username, ticket_type, ticket_ subject, and ticket_body.
 
 ### Service Desk Ingest API Endpoint Module
 
+- uptime-kuma
+- tailscale
+- CubeCoders AMP
+- newrelic
+
 ### Service Desk Egress API Endpoint Module
+
+- newrelic
 
 ## Customer Management Platform
 
@@ -135,5 +144,4 @@ Use json key-value pairs to store and sort this data.
 
 ### Service Desk Operations
 
-**Types**
 
