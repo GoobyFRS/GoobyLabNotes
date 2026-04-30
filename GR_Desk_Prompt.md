@@ -95,11 +95,26 @@ Use json key-value pairs to store and sort this data.
 - employee_first_name
 - employee_last_name
 - employee_preferred_name
+- employee_age
+- employee_dob
+- employee_state
 - employee_ingame_username
 - employee_chat_userid
 - employee_hire_date
 - employee_termination_date
 - rehire_status
 - employee_role
+- employee_compensation
 - salary_exempt
+- is_bonus_eligable
+- bonus_rate
 - assigned_business_unit
+- team_queue_access
+- employee_pip_count
+- has_active_pip
+- feedback_data
+
+### Service Desk Operations
+
+**Types**
+
