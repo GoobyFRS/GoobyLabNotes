@@ -13,6 +13,10 @@ GR_Desk is a business logic platform built to support GR Host operations while a
 
 - IT Ticket / Service Desk
 - Knowledge Base
+- CRM Platform
+- configuration.yml
+- branding yml
+- DOTENV for secrets
 
 ### Secondary Features
 
@@ -24,21 +28,58 @@ GR_Desk is a business logic platform built to support GR Host operations while a
 
 ### IT Ticket Service Desk
 
+Use json key-value pairs to store and sort this data.
+
 Name, in-game username, ticket_type, ticket_ subject, and ticket_body.
 
-**Types:** Request - REQ, Chsnge 
+**Types:** Request-REQ, Change-CHG, Incident-INC,
 
 **Ticket Key:Values**
 
 - uuid
+- ticket_number
+- ticket_status
 - requestor_name
 - requestor_username
 - ticket_type
 - ticket_subject
 - ticket_body
+- ticket_impact
+- ticket_urgency
 - escalation_level
+- assigned_team_queue
+- assigned_support_person
 - ticket_worknotes
 - ticket_created_timestamp
-- ticket_
+- ticket_escalation_timestamp
+- ticket_closed_timestamp
+- ticket_acknowledged_timestamp
+- requestor_vip_status
 
+### Service Desk Change Module
+
+### Service Desk Reporting Module
+
+### Service Desk Ingest API Endpoint Module
+
+### Service Desk Egress API Endpoint Module
+
+## Customer Management Platform
+
+Use json key-value pairs to store and sort this data.
+
+**Customer Key:Values**
+
+- uuid
+- customer_id
+- customer_username
+- customer_first_name
+- customer_last_name
+- customer_prefered_name
+- customer_ingame_username
+- customer_contact_email
+- customer_account_created_date
+- customer_account_status
+- customer_fraud_risk
+- customer_vip_status
 
