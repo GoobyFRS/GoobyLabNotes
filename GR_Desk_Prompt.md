@@ -82,4 +82,24 @@ Use json key-value pairs to store and sort this data.
 - customer_account_status
 - customer_fraud_risk
 - customer_vip_status
+- customer_account_value
+- customer_helpdesk_tickets
+- is_content_creator
 
+## Employee Management Platform
+
+Use json key-value pairs to store and sort this data.
+
+- uuid
+- employee_id
+- employee_first_name
+- employee_last_name
+- employee_preferred_name
+- employee_ingame_username
+- employee_chat_userid
+- employee_hire_date
+- employee_termination_date
+- rehire_status
+- employee_role
+- salary_exempt
+- assigned_business_unit
