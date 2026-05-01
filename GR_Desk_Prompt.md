@@ -4,61 +4,95 @@ GR_Desk is a business logic platform built to support GR Host operations while a
 
 ## Code Quality
 
+Project must be based on Python3 and Flask. It should be meant to run behind Caddy -> Gunicorn.
+
+- Use flask blueprints
+- no sql databases
 - Use Jinja for HTML templates.
-- Follow HTML5 W3 best practices for modern web.
+- Follow HTML5 W3 best practices for modern  and accessible web.
 - Single css file with all elements. Reuse as many as possible.
-- Single JavaScript file
+- Single JavaScript file for all scripts.
 - Strict PEP8 compliant Python
 - configuration via configuration.yml
 - custom branding via custom.yml
-- DOTENV for secrets 
-
+- Secrets stored and referenced in a DOTENV file.
+- Use decorators to perform access control.
 
 ## Core Features
 
 - IT Ticket / Service Desk
+- Support Ticket Metrics Reporting
 - Knowledge Base
-- CRM Platform
-- HR Platform
 
 ### Secondary Features
 
 - Customer Management
-- Metrics Reporting
 - Employee Management
 - Discord ChatOps
 - Slack ChatOps
 
 ### IT Ticket Service Desk
 
+Home/Landing/index.html page should be the primary ticket submission page. Getting the following information from the end-user.
+
+1. Name (requestor_name)
+2. In-Game Username (requestor_username)
+3. Ticket Type (ticket_type)
+4. Ticket Subject (ticket_ subject)
+5. Ticket Description (ticket_body)
+
+Tickets can be assigned a Urgency level 1 thru 5.
+
+1. Critical
+2. High
+3. Medium
+4. Low
+5. Planning
+
+Tickets can be assigned an Impact level 1 thru 4.
+
+1. High
+2. Medium
+3. Low
+4. Unknown
+
+**Ticket Types:** 
+
+1. Request - General Support.
+2. Change - Requesting/Executing changes to configuration or access.
+3. Incident - Something broke when it shouldn't have. 
+4. Billing - Billing, Payments, Refunds.
+
+**Ticket Numbers:** By default, all new tickets should have a ticket_number of TKT<YEAR>-<N+1> with four 0 padding. (TKT2026-0001 or TKT2026-0234)
+
+**Ticket Status:** new, in_progress, on_hold, closed, cancelled
+
 Use json key-value pairs to store and sort this data.
 
-Name, in-game username, ticket_type, ticket_ subject, and ticket_body.
-
-**Types:** Request-REQ, Change-CHG, Incident-INC, Billing-TKT
-
-**Ticket Key:Values**
+**Ticket JSON Key:Values**
 
 - uuid
 - ticket_number
-- ticket_status
+- ticket_status (Default:new)
 - requestor_name
 - requestor_username
 - ticket_type
 - ticket_subject
 - ticket_body
-- ticket_impact
-- ticket_urgency
-- escalation_level
-- assigned_team_queue
-- assigned_support_person
+- ticket_impact (Default:low)
+- ticket_urgency (Default:low)
+- escalation_level (Default:0)
+- assigned_team_queue (Default:servicedesk)
+- assigned_support_person (Default:none)
 - ticket_worknotes
-- ticket_created_timestamp
-- ticket_escalation_timestamp
-- ticket_closed_timestamp
+- ticket_created_timestamp (year-month-day-24:00)
+- ticket_escalation_timestamp (year-month-day-24:00)
+- ticket_closed_timestamp (year-month-day-24:00)
 - ticket_acknowledged_timestamp
-- requestor_vip_status
-- ticket_overdue
+- requestor_vip_status (Default:false)
+- ticket_overdue (Default:false)
+
+**Access Roles:** everyone, technician, manager, 
 
 ### Service Desk Change Module
 
@@ -101,7 +135,7 @@ Name, in-game username, ticket_type, ticket_ subject, and ticket_body.
 
 ## Customer Management Platform
 
-Use json key-value pairs to store and sort this data.
+Not sure if JSON or YAML would be better for this.
 
 **Customer Key:Values**
 
@@ -123,7 +157,7 @@ Use json key-value pairs to store and sort this data.
 
 ## Employee Management Platform
 
-Use json key-value pairs to store and sort this data.
+Not sure if JSON or YAML would be better for this.
 
 - uuid
 - employee_id
@@ -153,4 +187,4 @@ Use json key-value pairs to store and sort this data.
 
 ### Service Desk Operations
 
-
+### Predictable URL Structure
