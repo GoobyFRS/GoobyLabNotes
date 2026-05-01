@@ -82,7 +82,7 @@ Use json key-value pairs to store and sort this data.
 - ticket_impact (Default:low)
 - ticket_urgency (Default:low)
 - escalation_level (Default:0)
-- assigned_team_queue (Default:servicedesk)
+- assigned_team_queue (Default:support)
 - assigned_support_person (Default:none)
 - ticket_worknotes
 - ticket_created_timestamp (year-month-day-24:00)
@@ -92,24 +92,24 @@ Use json key-value pairs to store and sort this data.
 - requestor_vip_status (Default:false)
 - ticket_overdue (Default:false)
 
-**Access Roles:** everyone, technician, manager, 
+**Access Roles:** everyone, technician, manager
 
 ### Service Desk Change Module
 
 - uuid
-- change_number
-- change_status
+- change_number (CHG<YEAR>-0000)
+- change_status (Default:new)
 - change_requestor
-- assigned_team_queue
-- change_support_person
+- assigned_team_queue (Default:support)
+- change_implementor
 - change_subject
 - change_description
 - change_rollback_plan
 - change_implement_plan
 - change_test_plan
-- change_start_timestamp
-- change_end_timestamp
-- change_to_appid
+- change_start_timestamp (year-month-day 24:00)
+- change_end_timestamp (year-month-day 24:00)
+- change_to_appid (Default:null)
 
 ### Service Desk Reporting Module
 
@@ -137,54 +137,116 @@ Use json key-value pairs to store and sort this data.
 
 Not sure if JSON or YAML would be better for this.
 
+**Fraud Risk Levels:** unknown, low, medium, high
+
+**Account Statuses:** Active, inactive, banned, requested_closed
+
 **Customer Key:Values**
 
 - uuid
-- customer_id
+- customer_id (C<count>)
 - customer_username
 - customer_first_name
 - customer_last_name
 - customer_prefered_name
 - customer_ingame_username
 - customer_contact_email
-- customer_account_created_date
-- customer_account_status
-- customer_fraud_risk
-- customer_vip_status
+- customer_account_created_date (year-month-day)
+- customer_account_status (Default:active)
+- customer_fraud_risk (Default:low)
+- customer_vip_status (Default:no)
 - customer_account_value
 - customer_helpdesk_tickets
-- is_content_creator
+- is_content_creator (Default:no)
 
 ## Employee Management Platform
 
 Not sure if JSON or YAML would be better for this.
 
 - uuid
-- employee_id
+- employee_id (EM<count>)
 - employee_first_name
 - employee_last_name
 - employee_preferred_name
 - employee_age
-- employee_dob
+- employee_dob (year-month-day)
 - employee_state
 - employee_ingame_username
 - employee_chat_userid
-- employee_hire_date
-- employee_termination_date
-- rehire_status
-- employee_role
-- employee_compensation
-- salary_exempt
-- is_bonus_eligible
-- bonus_rate
-- assigned_business_unit
-- team_queue_access
-- employee_pip_count
-- has_active_pip
-- is_on_probation
-- total_pto_available
-- reports_to_who
+- employee_hire_date (year-month-day)
+- employee_termination_date (Default:null)
+- rehire_status (Default:yes)
+- employee_role (Default:technician)
+- employee_compensation (Default:null)
+- salary_exempt (Default:no)
+- is_bonus_eligible (Default:no)
+- bonus_rate (Default:0)
+- assigned_business_unit (Default:support)
+- access_role (Default:technician)
+- employee_pip_count (Default:0)
+- has_active_pip (Default:no)
+- is_on_probation (Default:no)
+- total_pto_available (Default:0)
+- reports_to (Default:null)
 
-### Service Desk Operations
+### Service Desk Technical Operations
+
+- Tickets should be assigned to the support queue by default
+- Tickets should send a Slack/Discord webhook when they are created, escalated, or closed.
+- ITSM Dashboard should have a method to close a ticket without opening the console view
+- Ticket console view should be able to mark in-progress, mark closed, and leave work notes.
+- Tickets should have the ability to be escalated.
 
 ### Predictable URL Structure
+
+```/``` - index.html
+
+```/login``` - Login Page
+
+```/itsm/dashboard``` - Employee Specific Queue
+
+```/itsm/queue/triage``` - Display un-assigned tickets.
+
+```/itsm/queue/support``` - Display Support Team ticket queue.
+
+```/itsm/queue/billing``` - Display Billing Team ticket queue.
+
+```/itsm/console/<ticket_number>``` - Ticket Console view
+
+```/reports``` - IT Service Management Reporting Module
+
+```/changes``` - Change Management Module
+
+```/changes/submit-new``` - Submit a new change
+
+```/changes/console/<change_number>``` Change Console view
+
+```/api/tailscale``` - Tailscale Notifications
+
+```/api/uptimekuma``` - Uptime-Kuma Notifications
+
+```/api/newrelic``` - New Relic alerts
+
+```/api/amp``` - CubeCoders AMP Alerts and Events
+
+```/crm/dashboard``` - Customer Dashboard
+
+```/crm/submit-new``` - Saves new Customer to the file
+
+```/crm/profile/<uuid>``` - View customer profile
+
+```/crm/profile/<uuid>/edit``` - Save edits?
+
+```/hrm/dashboard```
+
+```/hrm/submit-new```
+
+```/hrm/profile/<uuid>```
+
+```/hrm/profile/<uuid>/edit```
+
+```/kb``` - Knowledge Base Home
+
+```/kb/minecraft```
+
+```/kb/account```
