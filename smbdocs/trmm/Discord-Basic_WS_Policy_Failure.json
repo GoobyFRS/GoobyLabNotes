@@ -1,0 +1,11 @@
+{
+    "content": "Workstation - Policy Violation",
+    "username": "FluffyCow",
+    "embeds": [
+        {
+            "title": "Workstation: {{agent.hostname}} Client: {{agent.site.client.name}}",
+            "description": "Basic Workstation checks have failed.",
+            "color": 13900
+        }
+    ]
+}

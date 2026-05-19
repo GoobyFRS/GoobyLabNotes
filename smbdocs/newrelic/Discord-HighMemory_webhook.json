@@ -1,0 +1,11 @@
+{
+    "content": "Host has memory utilization greater than 75% over the last 15 minutes.",
+    "username": "RelicCat",
+    "embeds": [
+        {
+            "title": "High Memory Utilization",
+            "description": {{json issuePageUrl}},
+            "color": 420
+        }
+    ]
+}

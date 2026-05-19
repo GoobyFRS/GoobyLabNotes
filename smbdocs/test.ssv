@@ -1,0 +1,23 @@
+Standard Hourly Rate	$120.00				TacticalRMM					1 Endpoint BOM	1 User BOM	1 Site BOM
+AH Hourly Rate	$200.00				Linode 4GB	$29/mo	Hours per Day	8		RMM Agent	MS365BP	BBPC Server
+Managed Endpoint	$50.00		Per Endpoint Per Month		2 vCPU	$348/year	Hours per Week	40		Malwarebytes	Bitwarden	Glasswire License
+					80GB SSD		Hours per Month	160		Ninite Pro		$100 NR Budget
+					4TB Transfer		Hours per Year	1920		AnyDesk		
+					Malwarebytes							
+GW-Start	$90.00	1 Year	Per Year Per User		Small Biz Plan	Yearly Cost	$/Device/Month	Our Price/Year				
+MS365Basic	$90.00	1 Year	Per Year Per User		1	$49.99	$4.17	$70				
+GW-BP	$270.00	1 Year	Per Year Per User		2	$79.98	$3.34	$112				
+MS365BP**	$330.00	1 Year	Per Year Per User		3	$119.97	$3.34	$168				
+Bitwarden					4	$159.96	$3.34	$224				
+Glasswire					10	$399.90	$3.34	$560				
+Proxmox Ent.	$925.00	1 Year	Standard - 1CPU	Plan Limit ->	20	$799.80	$3.34	$1,120				
+RSYNC	$405.00	1 Year	2TB Unit	Ninite Pro								
+Ubuntu Pro SS	$700.00	1 Year	per Server/VM	Machines	Price							
+Ubuntu Pro Infra	$2,500.00	1 Year	per Server/VM	First 20	$1.00 per machine							
+Ubuntu Pro FS	$4,800.00	1 Year	per Server/VM	Next 400	$0.50 per machine							
+Managed Wireless AP	$60.00		$5/Month	Additional	$0.25 per machine							
+Managed L2 Switch	$240.00		$20/Month	MSP Plans	Charge	On-Site Hours	Remote Hours	Hardware Support				
+Managed L3 Switch	$600.00		$50/Month	Plant				No				
+Managed Router	$600.00		$50/Month	Seedling				Yes				
+Managed BM	$1,200.00		$100/Month	Growth				Yes				
+Managed VM	$960.00		$80/Month									
