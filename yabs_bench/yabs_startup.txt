@@ -3,7 +3,7 @@ curl -sL yabs.sh | bash -s -- -r -9 -6 -j -w 2026-LRPC-yabs.json
 oracle_intel_standard3_flex: CPU: Intel Xeon Platinum 8358 (4) @ 2.593GHz
 oracle_amd_standard_e4_flex: AMD EPYC 7J13 (4) @ 2.445GHz
 oracle_amd_standard_e2_micro: AMD EPYC 7551 (2) @ 1.996GHz
-
 linode_shared_4g_india: AMD EPYC 7501 (2) @ 1.999GHz
 
 sudo apt update && sudo apt upgrade -y
+curl -sL yabs.sh | bash -s -- -r -9 -6 -j -w $HOSTNAME-yabs.json
