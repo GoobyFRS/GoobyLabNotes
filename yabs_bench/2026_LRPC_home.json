@@ -1,0 +1,134 @@
+{
+    "version": "v2026-05-11",
+    "time": "20260610-103904",
+    "os": {
+        "arch": "x64",
+        "distro": "Debian GNU/Linux 13 (trixie)",
+        "kernel": "6.12.90+deb13.1-amd64",
+        "uptime": 812986.95,
+        "vm": "NONE"
+    },
+    "net": {
+        "ipv4": true,
+        "ipv6": false
+    },
+    "cpu": {
+        "model": "Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz",
+        "cores": 4,
+        "freq": "1382.933 MHz",
+        "aes": true,
+        "virt": false
+    },
+    "mem": {
+        "ram": 12165524,
+        "ram_units": "KiB",
+        "swap": 4104188,
+        "swap_units": "KiB",
+        "disk": 110766580,
+        "disk_units": "KB"
+    },
+    "ip_info": {
+        "protocol": "IPv4",
+        "isp": "Comcast Cable Communications, LLC",
+        "asn": "AS7922 Comcast Cable Communications, LLC",
+        "org": "Comcast Cable Communications, Inc.",
+        "city": "Bothell",
+        "region": "Washington",
+        "region_code": "WA",
+        "country": "United States"
+    },
+    "partition": "/dev/sda2",
+    "fio": [
+        {
+            "bs": "4k",
+            "speed_r": 97404,
+            "iops_r": 24351,
+            "speed_w": 97661,
+            "iops_w": 24415,
+            "speed_rw": 195065,
+            "iops_rw": 48766,
+            "speed_units": "KBps"
+        },
+        {
+            "bs": "64k",
+            "speed_r": 153021,
+            "iops_r": 2390,
+            "speed_w": 153826,
+            "iops_w": 2403,
+            "speed_rw": 306847,
+            "iops_rw": 4793,
+            "speed_units": "KBps"
+        },
+        {
+            "bs": "512k",
+            "speed_r": 175249,
+            "iops_r": 342,
+            "speed_w": 184560,
+            "iops_w": 360,
+            "speed_rw": 359809,
+            "iops_rw": 702,
+            "speed_units": "KBps"
+        },
+        {
+            "bs": "1m",
+            "speed_r": 191270,
+            "iops_r": 186,
+            "speed_w": 204008,
+            "iops_w": 199,
+            "speed_rw": 395278,
+            "iops_rw": 385,
+            "speed_units": "KBps"
+        }
+    ],
+    "iperf": [
+        {
+            "mode": "IPv4",
+            "provider": "Clouvider",
+            "loc": "London, UK (10G)",
+            "send": "3.00 Mbits/sec",
+            "recv": "24.6 Mbits/sec",
+            "latency": "150 ms"
+        },
+        {
+            "mode": "IPv4",
+            "provider": "Leaseweb",
+            "loc": "Singapore, SG (10G)",
+            "send": "2.26 Mbits/sec",
+            "recv": "14.4 Mbits/sec",
+            "latency": "193 ms"
+        },
+        {
+            "mode": "IPv4",
+            "provider": "Leaseweb",
+            "loc": "NYC, NY, US (10G)",
+            "send": "2.81 Mbits/sec",
+            "recv": "21.4 Mbits/sec",
+            "latency": "88.8 ms"
+        }
+    ],
+    "geekbench": [
+        {
+            "version": 4,
+            "single": null,
+            "multi": null,
+            "url": "https://browser.geekbench.com/v4/cpu/19686068"
+        },
+        {
+            "version": 5,
+            "single": null,
+            "multi": null,
+            "url": "https://browser.geekbench.com/v5/cpu/24369992"
+        },
+        {
+            "version": 6,
+            "single": null,
+            "multi": null,
+            "url": "https://browser.geekbench.com/v6/cpu/18307513"
+        }
+    ],
+    "runtime": {
+        "start": 1781105944,
+        "end": 1781108783,
+        "elapsed": 2839
+    }
+}
