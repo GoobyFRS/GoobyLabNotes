@@ -1,0 +1,13 @@
+linode-cli linodes create \
+  --backups_enabled true \
+  --image 'linode/ubuntu26.04' \
+  --interface_generation linode \
+  --interfaces '[{"firewall_id":124819,"public":{}}]' \
+  --maintenance_policy linode/migrate \
+  --region us-sea \
+  --type g6-nanode-1 \
+  --label customer-serviceid \
+  --tags personal \
+  --authorized_users MattGoobyFRS \
+  --root_pass 'rootpasswd' \
+  --disk_encryption enabled
