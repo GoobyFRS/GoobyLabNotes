@@ -1,0 +1,158 @@
+{
+    "version": "v2026-05-11",
+    "time": "20260624-021240",
+    "os": {
+        "arch": "x64",
+        "distro": "Ubuntu 26.04 LTS",
+        "kernel": "7.0.0-22-generic",
+        "uptime": 188.94,
+        "vm": "KVM"
+    },
+    "net": {
+        "ipv4": true,
+        "ipv6": true
+    },
+    "cpu": {
+        "model": "AMD EPYC 7713 64-Core Processor",
+        "cores": 2,
+        "freq": "1999.999 MHz",
+        "aes": true,
+        "virt": false
+    },
+    "mem": {
+        "ram": 4004632,
+        "ram_units": "KiB",
+        "swap": 507900,
+        "swap_units": "KiB",
+        "disk": 81954376,
+        "disk_units": "KB"
+    },
+    "ip_info": {
+        "protocol": "IPv6",
+        "isp": "Akamai Technologies, Inc.",
+        "asn": "AS63949 Akamai Connected Cloud",
+        "org": "Linode",
+        "city": "Tukwila",
+        "region": "Washington",
+        "region_code": "WA",
+        "country": "United States"
+    },
+    "partition": "/dev/sda",
+    "fio": [
+        {
+            "bs": "4k",
+            "speed_r": 195627,
+            "iops_r": 48906,
+            "speed_w": 196143,
+            "iops_w": 49035,
+            "speed_rw": 391770,
+            "iops_rw": 97941,
+            "speed_units": "KBps"
+        },
+        {
+            "bs": "64k",
+            "speed_r": 1744493,
+            "iops_r": 27257,
+            "speed_w": 1753674,
+            "iops_w": 27401,
+            "speed_rw": 3498167,
+            "iops_rw": 54658,
+            "speed_units": "KBps"
+        },
+        {
+            "bs": "512k",
+            "speed_r": 5292435,
+            "iops_r": 10336,
+            "speed_w": 5573637,
+            "iops_w": 10886,
+            "speed_rw": 10866072,
+            "iops_rw": 21222,
+            "speed_units": "KBps"
+        },
+        {
+            "bs": "1m",
+            "speed_r": 4602195,
+            "iops_r": 4494,
+            "speed_w": 4908698,
+            "iops_w": 4793,
+            "speed_rw": 9510893,
+            "iops_rw": 9287,
+            "speed_units": "KBps"
+        }
+    ],
+    "iperf": [
+        {
+            "mode": "IPv4",
+            "provider": "Clouvider",
+            "loc": "London, UK (10G)",
+            "send": "1.33 Gbits/sec",
+            "recv": "1.73 Gbits/sec",
+            "latency": "129 ms"
+        },
+        {
+            "mode": "IPv4",
+            "provider": "Leaseweb",
+            "loc": "Singapore, SG (10G)",
+            "send": "852 Mbits/sec",
+            "recv": "5.51 Gbits/sec",
+            "latency": "204 ms"
+        },
+        {
+            "mode": "IPv4",
+            "provider": "Leaseweb",
+            "loc": "NYC, NY, US (10G)",
+            "send": "1.93 Gbits/sec",
+            "recv": "6.22 Gbits/sec",
+            "latency": "64.9 ms"
+        },
+        {
+            "mode": "IPv6",
+            "provider": "Clouvider",
+            "loc": "London, UK (10G)",
+            "send": "1.34 Gbits/sec",
+            "recv": "1.54 Gbits/sec",
+            "latency": "129 ms"
+        },
+        {
+            "mode": "IPv6",
+            "provider": "Leaseweb",
+            "loc": "Singapore, SG (10G)",
+            "send": "898 Mbits/sec",
+            "recv": "5.35 Gbits/sec",
+            "latency": "204 ms"
+        },
+        {
+            "mode": "IPv6",
+            "provider": "Leaseweb",
+            "loc": "NYC, NY, US (10G)",
+            "send": "2.31 Gbits/sec",
+            "recv": "5.97 Gbits/sec",
+            "latency": "64.9 ms"
+        }
+    ],
+    "geekbench": [
+        {
+            "version": 4,
+            "single": null,
+            "multi": null,
+            "url": "https://browser.geekbench.com/v4/cpu/19723277"
+        },
+        {
+            "version": 5,
+            "single": null,
+            "multi": null,
+            "url": "https://browser.geekbench.com/v5/cpu/24403602"
+        },
+        {
+            "version": 6,
+            "single": null,
+            "multi": null,
+            "url": "https://browser.geekbench.com/v6/cpu/18463935"
+        }
+    ],
+    "runtime": {
+        "start": 1782267160,
+        "end": 1782268127,
+        "elapsed": 967
+    }
+}
