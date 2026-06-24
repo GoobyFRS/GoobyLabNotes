@@ -1,0 +1,152 @@
+{
+    "version": "v2026-05-11",
+    "time": "20260623-200155",
+    "os": {
+        "arch": "aarch64",
+        "distro": "Ubuntu 24.04.4 LTS",
+        "kernel": "6.17.0-1016-oracle",
+        "uptime": 2244548.02,
+        "vm": "KVM"
+    },
+    "net": {
+        "ipv4": true,
+        "ipv6": true
+    },
+    "cpu": {
+        "model": "Neoverse-N1",
+        "cores": 4,
+        "freq": "??? MHz",
+        "aes": true,
+        "virt": false
+    },
+    "mem": {
+        "ram": 24550316,
+        "ram_units": "KiB",
+        "swap": 0,
+        "swap_units": "KiB",
+        "disk": 64923299,
+        "disk_units": "KB"
+    },
+    "ip_info": {
+        "protocol": "IPv6",
+        "isp": "Oracle Corporation",
+        "asn": "AS31898 Oracle Corporation",
+        "org": "Oracle Corporation",
+        "city": "Phoenix",
+        "region": "Arizona",
+        "region_code": "AZ",
+        "country": "United States"
+    },
+    "partition": "/dev/sda1",
+    "fio": [
+        {
+            "bs": "4k",
+            "speed_r": 8111,
+            "iops_r": 2027,
+            "speed_w": 8150,
+            "iops_w": 2037,
+            "speed_rw": 16261,
+            "iops_rw": 4064,
+            "speed_units": "KBps"
+        },
+        {
+            "bs": "64k",
+            "speed_r": 27426,
+            "iops_r": 428,
+            "speed_w": 28242,
+            "iops_w": 441,
+            "speed_rw": 55668,
+            "iops_rw": 869,
+            "speed_units": "KBps"
+        },
+        {
+            "bs": "512k",
+            "speed_r": 24391,
+            "iops_r": 47,
+            "speed_w": 26478,
+            "iops_w": 51,
+            "speed_rw": 50869,
+            "iops_rw": 98,
+            "speed_units": "KBps"
+        },
+        {
+            "bs": "1m",
+            "speed_r": 24274,
+            "iops_r": 23,
+            "speed_w": 27083,
+            "iops_w": 26,
+            "speed_rw": 51357,
+            "iops_rw": 49,
+            "speed_units": "KBps"
+        }
+    ],
+    "iperf": [
+        {
+            "mode": "IPv4",
+            "provider": "Clouvider",
+            "loc": "London, UK (10G)",
+            "send": "busy ",
+            "recv": "busy ",
+            "latency": "133 ms"
+        },
+        {
+            "mode": "IPv4",
+            "provider": "Leaseweb",
+            "loc": "Singapore, SG (10G)",
+            "send": "979 Mbits/sec",
+            "recv": "2.29 Gbits/sec",
+            "latency": "198 ms"
+        },
+        {
+            "mode": "IPv4",
+            "provider": "Leaseweb",
+            "loc": "NYC, NY, US (10G)",
+            "send": "2.46 Gbits/sec",
+            "recv": "3.12 Gbits/sec",
+            "latency": "63.0 ms"
+        },
+        {
+            "mode": "IPv6",
+            "provider": "Clouvider",
+            "loc": "London, UK (10G)",
+            "send": "busy ",
+            "recv": "busy ",
+            "latency": "134 ms"
+        },
+        {
+            "mode": "IPv6",
+            "provider": "Leaseweb",
+            "loc": "Singapore, SG (10G)",
+            "send": "987 Mbits/sec",
+            "recv": "1.84 Gbits/sec",
+            "latency": "198 ms"
+        },
+        {
+            "mode": "IPv6",
+            "provider": "Leaseweb",
+            "loc": "NYC, NY, US (10G)",
+            "send": "2.77 Gbits/sec",
+            "recv": "3.22 Gbits/sec",
+            "latency": "62.1 ms"
+        }
+    ],
+    "geekbench": [
+        {
+            "version": 5,
+            "single": null,
+            "multi": null,
+            "url": "https://browser.geekbench.com/v5/cpu/24403582"
+        },
+        {
+            "version": 6,
+            "single": null,
+            "multi": null,
+            "url": "https://browser.geekbench.com/v6/cpu/18463869"
+        }
+    ],
+    "runtime": {
+        "start": 1782266515,
+        "end": 1782267492,
+        "elapsed": 977
+    }
+}
