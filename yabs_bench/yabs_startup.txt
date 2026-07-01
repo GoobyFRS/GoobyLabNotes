@@ -1,4 +1,4 @@
-curl -sL yabs.sh | bash -s -- -r -9 -6 -j -w 2026-$HOSTNAME.json
+curl -sL yabs.sh | bash -s -- -r -9 -6 -j -w 2026-g7-dedicated-4.json
 
 oracle_intel_standard3_flex: CPU: Intel Xeon Platinum 8358 (4) @ 2.593GHz
 oracle_amd_standard_e4_flex: AMD EPYC 7J13 (4) @ 2.445GHz

@@ -133,8 +133,8 @@
     "geekbench": [
         {
             "version": 4,
-            "single": null,
-            "multi": null,
+            "single": 5120,
+            "multi": 6043,
             "url": "https://browser.geekbench.com/v4/cpu/19723314"
         },
         {
